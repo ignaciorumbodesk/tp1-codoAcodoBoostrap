@@ -1,10 +1,14 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 *{
 	box-sizing: border-box;
 	font: roboto;
 }
 =======
 >>>>>>> 6bb4844 (commit inicial)
+=======
+
+>>>>>>> 9646087 (menu finalizado.)
 .logoScale {
     width: 125px;
 }
@@ -12,6 +16,7 @@
 .navBackground {
     background-color: #3E4342;
 }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 .container1 {
@@ -98,3 +103,5 @@ form .buttonBackground {
     color: white;
 >>>>>>> 6bb4844 (commit inicial)
 }
+=======
+>>>>>>> 9646087 (menu finalizado.)
