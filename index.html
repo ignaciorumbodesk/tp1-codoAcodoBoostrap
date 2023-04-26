@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -14,37 +14,105 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg md- navBackground">
-        <div class="container-fluid d-flex">
-            <a class="navbar-brand text-white flex-grow-1" href="#">
-                <img class="logoScale" src="./images/codoacodo.png" alt="Logo codo a Codo"> Conf Bs As
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">La conferencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Los oradores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">El lugar y la fecha</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Conviertete en orador</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-warning" href="#">Comprar tickets</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navBackground">
+        <div class="container d-flex">
+            <a class="navbar-brand flex-grow-1 text-white" href="#"><img class="logoScale" src="./images/codoacodo.png" alt="Logo codo a codo">Bs As Conf</a>
+            <ul class="nav justify-content-end align-self-center">
+                <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Activo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-warning" href="#">Enlace</a>
+                </li>
+            </ul>
         </div>
     </nav>
+    <section class="container1">
+        <div class="container d-flex">
+            <div class="container">
+            <!-- no data -->
+            </div>
+            <div class="container mainCopy">
+                <h1>Conf Bs As</h1>
+                <p>Bs As lleg por primera vez a Argentina. Un evento para compartir con<br>
+                    nuestra comunidad el conocimiento y experiencia de los expertos que<br>
+                    estan creando el futuro de internet. Ven a conocer a miembros del<br>
+                    evento, a otros estudiantes de Codo a Codo y los ordenadores de primer<br>
+                    nivel que tenemos para ti. Te esperamos!
+                </p>
+                <button type="button" class="btn btn-outline-light btn-lg">Quiero ser orador</button>
+                <button type="button" class="btn btn-success btn-lg">Comprar tickets</button>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="container">
+                <p class="text-center">Conoce a los</p>
+                <h2 class="text-center">Oradores</h2>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col">
+              <div class="card h-100">
+                <img src="./images/steve.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span class="badge bg-warning text-dark">Warning</span>
+                    <span class="badge bg-info text-dark">Info</span>
+                  <h5 class="card-title">Steve Jobs</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="imgSize "src="./images/bill.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span class="badge bg-warning text-dark">Warning</span>
+                    <span class="badge bg-info text-dark">Info</span>
+                  <h5 class="card-title">Bill Gates</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./images/ada.jpeg" class="card-img-top" alt="...">
+                <div class="card-body cursor">
+                    <span class="badge bg-secondary">Secondary</span>
+                    <span class="badge bg-danger">Secondary</span>
+                  <h5 class="card-title">Ada Lovelace</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section id="posOrators" class="container-fluid posOrators">
+        <div class="row">
+            <div class="col-md-6 bgHonolulu">
+            </div>
+            <div class="col-md-6 bgConf">
+                <h2>Bs As - Octubre</h2>
+                <p>Bs As lleg por primera vez a Argentina. Un evento para compartir con<br>
+                    nuestra comunidad el conocimiento y experiencia de los expertos que<br>
+                    estan creando el futuro de internet. Ven a conocer a miembros del<br>
+                    evento, a otros estudiantes de Codo a Codo y los ordenadores de primer<br>
+                    nivel que tenemos para ti. Te esperamos!
+                </p>
+                <button type="button" class="btn btn-outline-light btn-lg">Conocer mas</button>
+                <button disabled="disabled"></button>
+            </div>
+        </div>
+    </section>
 </body>
-
 </html>

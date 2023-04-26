@@ -1,3 +1,4 @@
+
 .logoScale {
     width: 125px;
 }
@@ -6,6 +7,43 @@
     background-color: #3E4342;
 }
 
-.navCustomTextColor {
+.container1 {
+    background-image: linear-gradient(0deg, rgba(2,0,36,0.5998774509803921) 0%, rgba(5,5,5,0.5102415966386555) 100%), url(./images/ba1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+}
+
+.mainCopy {
     color: white;
+    padding-top: 150px;
+    text-align: right;
+    
+}
+
+.myCardStyle {
+    margin: 50px 0px;
+}
+
+.oradoresText {
+    align-content: center;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.bgHonolulu {
+    background-image: url(./images/honolulu.jpg);
+    background-size: cover;
+}
+
+.bgConf {
+    background-color: #333a41;
+    color: white;
+}
+
+.posOrators {
+    margin-top: 50px;
 }
