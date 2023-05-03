@@ -12,30 +12,37 @@
         crossorigin="anonymous"></script>
     <title>Codo a Codo / Bs As Conf</title>
 </head>
-
 <body>
-    <nav class="navBackground">
-        <div class="container d-flex">
+<!-- NAV -->   
+    <nav class="navbar navbar-expand-lg navBackground">
+        <div class=" container container-fluid">
             <a class="navbar-brand flex-grow-1 text-white" href="#"><img class="logoScale" src="./images/codoacodo.png" alt="Logo codo a codo">Bs As Conf</a>
-            <ul class="nav justify-content-end align-self-center">
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Activo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Enlace</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Enlace</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Enlace</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link text-warning" href="#">Enlace</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#oradores">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#posOrators">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">conviertete en orador</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-warning" href="#">Comprar tickets</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+
+<!-- MAIN -->
     <section class="container1">
         <div class="container d-flex">
             <div class="container">
@@ -54,7 +61,8 @@
             </div>
         </div>
     </section>
-    <section class="container">
+<!-- ORADORES -->
+    <section id="oradores" class="container">
         <div class="row">
             <div class="container">
                 <p class="text-center">Conoce a los</p>
@@ -97,6 +105,7 @@
             </div>
           </div>
     </section>
+<!-- LUGAR -->
     <section id="posOrators" class="container-fluid posOrators">
         <div class="row">
             <div class="col-md-6 bgHonolulu">
@@ -113,6 +122,7 @@
             </div>
         </div>
     </section>
+<!-- FORMULARIO -->
     <section id="orador">
         <p>conviertete en un</p>
         <h2>orador</h2>
@@ -122,5 +132,6 @@
             <input type="text" placeholder="" name="" id="">
         </form>
     </section>
+
 </body>
 </html>
