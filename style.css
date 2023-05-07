@@ -42,6 +42,7 @@
 .bgConf {
     background-color: #333a41;
     color: white;
+    padding-top: 25px;
 }
 
 .posOrators {
@@ -50,4 +51,36 @@
 
 .oratorsForm {
     background-color:#ffff00;
+}
+
+.contHeight {
+    height: 500px;
+}
+
+.oradorForm {
+    margin: 0px auto;
+}
+
+
+.containerMaxWidth {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+
+form .buttonBackground {
+    color: white;
+    background-color: #A0B04E;
+}
+
+.footerProperties {
+    background: rgb(29, 58, 75);
+    margin-bottom: 0px;
+    margin-top: 5%;
+}
+
+
+.rowMargin {
+    margin: 15px 0px;
+    marg
 }
