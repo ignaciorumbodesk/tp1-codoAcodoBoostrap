@@ -1,4 +1,7 @@
-
+*{
+	box-sizing: border-box;
+	font: roboto;
+}
 .logoScale {
     width: 125px;
 }
@@ -82,5 +85,8 @@ form .buttonBackground {
 
 .rowMargin {
     margin: 15px 0px;
-    marg
+}
+
+.textIgnite {
+	underline:
 }
