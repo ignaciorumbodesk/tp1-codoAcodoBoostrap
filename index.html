@@ -37,18 +37,18 @@
           </div>
           <div class="row mt-3">
             <div class="col-md mb-3">
-              <input class="form-control "type="text" name="" id="" placeholder="Cantidad de entradas">
+              <input class="form-control "type="text" name="" id="cantEntradas" onkeyup="calcPrecioFinal()" placeholder="Cantidad de entradas">
               <small>Costo de entradas $1000</small>
             </div>
             <div class="col-md mb-3">
-              <select class="form-select" id="porcDescuento" onchange="calPrecioFinal()">
+              <select class="form-select" id="porcDescuento" onchange="calcPrecioFinal()">
                 <option value="10">Particular</option>
                 <option value="30">Estudiante</option>
                 <option value="50">Orador</option>
             </select>                    
             </div>
             <div class="col-md mb-3">
-              <input type="text" name="valorTotal" id="valorTotal" disabled class="form-control" placeholder="Valor total">
+              <input type="text" name="valorTotal" id="precioFinal" disabled class="form-control" placeholder="Valor total">
               <small>*Con descuentos aplicados</small>
             </div>
           </div>
