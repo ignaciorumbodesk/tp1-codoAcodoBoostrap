@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 *{
 	box-sizing: border-box;
 	font: roboto;
 }
-=======
->>>>>>> 6bb4844 (commit inicial)
-=======
 
->>>>>>> 9646087 (menu finalizado.)
 .logoScale {
     width: 125px;
 }
@@ -16,9 +11,7 @@
 .navBackground {
     background-color: #3E4342;
 }
-<<<<<<< HEAD
 
-<<<<<<< HEAD
 .container1 {
     background-image: linear-gradient(0deg, rgba(2,0,36,0.5998774509803921) 0%, rgba(5,5,5,0.5102415966386555) 100%), url(./images/ba1.jpg);
     background-repeat: no-repeat;
@@ -97,11 +90,10 @@ form .buttonBackground {
 }
 
 .textIgnite {
-	underline:
-=======
+	
+}
 .navCustomTextColor {
     color: white;
->>>>>>> 6bb4844 (commit inicial)
+
 }
-=======
->>>>>>> 9646087 (menu finalizado.)
+
