@@ -6,16 +6,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
   <title>Codo a Codo / Bs As Conf</title>
 </head>
-
 <body>
-  <!-- NAV -->
+  <!-- MODAL Window -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Comprar Tickets</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <input class="form-control" type="text" name="" id=""placeholder="Nombre">
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <input class="form-control" type="text" name="" id=""placeholder="Apellido">
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-6 col-xs-12">
+              <input class="form-control" type="mail" name="" id=""placeholder="Email">
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <input class="form-control" type="tel" name="" id=""placeholder="Telefono">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md mb-3">
+              <input class="form-control "type="text" name="" id="cantEntradas" onkeyup="calcPrecioFinal()" placeholder="Cantidad de entradas">
+              <small>Costo de entradas $1000</small>
+            </div>
+            <div class="col-md mb-3">
+              <select class="form-select" id="porcDescuento" onchange="calcPrecioFinal()">
+                <option value="10">Particular</option>
+                <option value="30">Estudiante</option>
+                <option value="50">Orador</option>
+            </select>                    
+            </div>
+            <div class="col-md mb-3">
+              <input type="text" name="valorTotal" id="precioFinal" disabled class="form-control" placeholder="Valor total">
+              <small>*Con descuentos aplicados</small>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <input type="submit" value="Comprar" class="btn btn-primary">
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- NAV -->
   <nav class="navbar navbar-expand-lg navBackground fixed-top ">
     <div class="container container-fluid">
       <a class="navbar-brand flex-grow-1 text-white" href="#"><img class="logoScale" src="./images/codoacodo.png"
@@ -39,7 +85,7 @@
             <a class="nav-link text-secondary" href="#orador">conviertete en orador</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-disabled" href="#">Comprar tickets</a>
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Comprar tickets</button>
           </li>
         </ul>
       </div>
@@ -66,7 +112,7 @@
         <button type="button" class="btn btn-outline-light btn-lg my-5">
           Quiero ser orador
         </button>
-        <button type="button" class="btn btn-success btn-lg">
+        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           Comprar tickets
         </button>
       </div>
@@ -213,4 +259,14 @@
       </li>
     </ul>
   </footer>
+
+  <!--JS SCRIPTS-->
+
+  <!--Js Boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+  <!-- My scripts-->
+  <script src="./scripts.js"></script>
 </body>
